@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "care_plans": [
+    {
+      "plan_id": "cp-fall-risk",
+      "name": "転倒リスク管理",
+      "observations": [
+        {"key": "vital_bp", "label": "血圧", "type": "number"},
+        {"key": "vital_pulse", "label": "脈拍", "type": "number"},
+        {"key": "gait", "label": "歩行状態", "type": "select", "options": ["安定", "ふらつき", "介助必要"]},
+        {"key": "environment", "label": "環境整備", "type": "select", "options": ["良好", "注意点あり"]},
+        {"key": "notes_exception", "label": "例外ログ（理由必須）", "type": "textarea_exception"}
+      ]
+    },
+    {
+      "plan_id": "cp-medication",
+      "name": "服薬管理",
+      "observations": [
+        {"key": "med_adherence", "label": "服薬実施", "type": "select", "options": ["実施", "拒否", "不明"]},
+        {"key": "side_effect", "label": "副作用疑い", "type": "select", "options": ["なし", "あり（要確認）"]},
+        {"key": "notes_exception", "label": "例外ログ（理由必須）", "type": "textarea_exception"}
+      ]
+    }
+  ]
+}
