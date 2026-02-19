@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>nurse-records-hub</title>
+  <style>
+  <?!= include('style'); ?>
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <div class="title">nurse-records-hub</div>
+    <div class="subtitle">計画 → 観察項目 → 記録文（貼り付け用）</div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>1) 利用者</h2>
+      <input id="patientName" class="input" placeholder="例：山田 太郎" />
+      <input id="authorName" class="input" placeholder="記録者（例：荒蒔）" />
+      <input id="visitAt" class="input" placeholder="訪問日時（例：2026-02-19 10:00）" />
+      <div class="hint">患者一覧</div>
+      <div id="patients" class="chips"></div>
+    </section>
+
+    <section class="card">
+      <h2>2) 看護計画</h2>
+      <div id="plans" class="chips"></div>
+      <div class="hint">計画を押すと観察項目が生成されます</div>
+    </section>
+
+    <section class="card">
+      <h2>3) 観察入力（固定）</h2>
+      <div id="obs" class="obs"></div>
+      <div class="hint">※自由記載は「例外ログ（理由必須）」のみ</div>
+    </section>
+
+    <section class="card">
+      <h2>4) 出力（貼り付け）</h2>
+      <button id="btnGen" class="btn">文章を生成</button>
+      <button id="btnCopy" class="btn secondary">コピー</button>
+      <textarea id="out" class="textarea" placeholder="ここに出力されます"></textarea>
+    </section>
+  </main>
+
+  <script>
+  <?!= include('app'); ?>
+  </script>
+</body>
+</html>

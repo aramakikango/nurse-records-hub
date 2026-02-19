@@ -1,0 +1,20 @@
+:root { font-family: -apple-system, system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #111; }
+.bar { padding: 14px 16px; background: #111; color: #fff; }
+.title { font-weight: 700; }
+.subtitle { opacity: .8; font-size: 12px; margin-top: 2px; }
+.grid { display: grid; gap: 12px; padding: 12px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+.card { background: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+h2 { margin: 0 0 10px 0; font-size: 16px; }
+.hint { font-size: 12px; opacity: .7; margin-top: 8px; }
+.input, .textarea, select { width: 100%; box-sizing: border-box; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 8px; font-size: 16px; }
+.textarea { min-height: 220px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { padding: 10px 12px; border-radius: 999px; border: 1px solid #ddd; background: #fff; font-size: 14px; }
+.chip.active { background: #111; color: #fff; border-color: #111; }
+.obs { display: grid; gap: 10px; }
+.row { display: grid; gap: 6px; }
+.label { font-size: 13px; opacity: .85; }
+.btn { padding: 12px 14px; border-radius: 10px; border: 0; background: #111; color: #fff; font-size: 16px; margin-right: 8px; }
+.btn.secondary { background: #4b5563; }
